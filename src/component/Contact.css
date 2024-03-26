@@ -1,0 +1,30 @@
+.contact_main_part{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    min-height: 610px;
+}
+body{
+    background-color: #e6e4e4;
+}
+.contact_main_part h1{
+    font-size: 35px;
+}
+.contact_main_part p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact_main_part p a{
+    font-weight: 600;
+    font-size: 18px;
+}
+.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }

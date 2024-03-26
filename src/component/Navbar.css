@@ -1,0 +1,38 @@
+.flex_div{
+    position: rea;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-inline: 1.5rem;
+    flex-direction: row;
+    height: 70px;
+}
+.flex_div h2{
+    color: black;
+}
+.ultag{
+    margin-left: 15rem;
+    list-style-type: none;
+}
+.navlink{
+    font-weight: 600;
+    color: black;
+    padding-inline: 2rem;
+    text-decoration: none;
+}
+.nabvar_btn{
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(231, 229, 229);
+}
+.nabvar_btn:hover{
+    transform: scale(1.01);
+    background-color: rgb(221, 217, 217);
+}
+
+  

@@ -1,0 +1,30 @@
+.about_main_part{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items:center;
+    min-height: 610px;
+}
+.about_main_part select{
+    margin-bottom: 1rem;
+    width: 175px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 14px;
+    background-color: rgb(251, 251, 251);
+}
+.about_main_part h2{
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
