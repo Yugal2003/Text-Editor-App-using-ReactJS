@@ -41,8 +41,8 @@ const About = () => {
                 <option className='first_option' value="Browser Compatible">Browser Compatible</option>
             </select>
             {/* Display the selected option and associated text */}
-            <p>{selectedOption}</p><br></br>
-            <p>{selectedText}</p>
+            <p className='ptags2'>{selectedOption}</p><br></br>
+            <p className='ptags2'>{selectedText}</p>
         </div>
     );
 };

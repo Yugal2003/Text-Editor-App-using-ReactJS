@@ -28,3 +28,57 @@ body{
     background-color: #222;
     color: #fff;
   }
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 360px) and (max-width: 767px) {
+    .contact_main_part h1{
+        font-size: 55px;
+    }
+    .contact_main_part p{
+        font-weight: 600;
+        font-size: 38px;
+    }
+    .contact_main_part p a{
+        color: blue;
+        font-weight: 600;
+        font-size: 38px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact_main_part h1{
+        font-size: 55px;
+    }
+    .contact_main_part p{
+        font-weight: 600;
+        font-size: 38px;
+    }
+    .contact_main_part p a{
+        color: blue;
+        font-weight: 600;
+        font-size: 38px;
+    } 
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .contact_main_part h1{
+        font-size: 55px;
+    }
+    .contact_main_part p{
+        font-weight: 600;
+        font-size: 38px;
+    }
+    .contact_main_part p a{
+        color: blue;
+        font-weight: 600;
+        font-size: 38px;
+    }
+  }

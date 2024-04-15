@@ -35,4 +35,62 @@
     background-color: rgb(221, 217, 217);
 }
 
-  
+  /* For screens between 320px and 767px (e.g., mobile devices) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .flex_div{
+        /* border: 1px solid red; */
+        width: 1400px;
+        height: 7rem;
+        background-color: #ededfc;
+    }
+    .flex_div h2{
+        font-size: 60px;
+        margin-left: 3rem;
+    }
+    .navlink{
+        font-size: 40px;
+        margin-left: -4rem;
+    }
+    .ultag{
+        gap: 2rem;
+    }
+}
+
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex_div{
+        width: 100%;
+        height: 90px;
+        background-color: #f8f9fa;
+    }
+    .flex_div h2{
+        font-size: 42px;
+        margin-left: 1rem;
+    }
+    .navlink{
+        margin-left: 3rem;
+        font-size: 26px;
+        padding-inline: 1rem;
+    }
+    
+}
+
+/* For screens between 1025px and 1440px */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .flex_div{
+        width: 1630px;
+        height: 100px;
+        background-color: #f8f9fa;
+    }
+    .flex_div h2{
+        font-size: 55px;
+        margin-left: 1rem;
+    }
+    .navlink{
+        font-size: 35px;
+        padding-inline: 1rem;
+    }
+    .ultag{
+        margin-left: 12rem;
+    }
+}

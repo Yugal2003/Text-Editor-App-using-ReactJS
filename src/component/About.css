@@ -13,7 +13,7 @@
     border-radius: 10px;
     padding: 0.5rem;
     font-size: 14px;
-    background-color: rgb(251, 251, 251);
+    /* background-color: rgb(251, 251, 251); */
 }
 .about_main_part h2{
     margin-bottom: 1rem;
@@ -27,4 +27,125 @@
   .dark-mode {
     background-color: #222;
     color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 360px) and (max-width: 767px) {
+    .light-mode {
+        width: 1000px;
+        color: black;
+        background-color: white;
+    }
+    .dark-mode{
+        width: 1400px;
+        color: white;
+        background-color: black;
+    }
+    .about_main_part{
+        margin-top: 15rem;
+        width: 1400px;
+    }
+    .about_main_part h2{
+        font-size: 55px;
+    }
+    .about_main_part select{
+        margin-bottom: 1rem;
+        width: 420px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 40px;
+        background-color: rgb(251, 251, 251);
+    }
+    .ptags2{
+        text-align: center;
+        width: 800px;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 35px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .light-mode {
+        width: 1000px;
+        color: black;
+        background-color: white;
+    }
+    .dark-mode{
+        width: 1400px;
+        color: white;
+        background-color: black;
+    }
+    .about_main_part{
+        margin-top: 10rem;
+        width: 1400px;
+    }
+    .about_main_part h2{
+        font-size: 45px;
+    }
+    .about_main_part select{
+        margin-bottom: 1rem;
+        width: 320px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 30px;
+        background-color: rgb(251, 251, 251);
+    }
+    .ptags2{
+        text-align: center;
+        width: 800px;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 35px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .light-mode {
+        width: 1000px;
+        color: black;
+        background-color: white;
+    }
+    .dark-mode{
+        width: 1400px;
+        color: white;
+        background-color: black;
+    }
+    .about_main_part{
+        margin-left: 5rem;
+        margin-top: 10rem;
+        width: 1400px;
+    }
+    .about_main_part h2{
+        font-size: 60px;
+    }
+    .about_main_part select{
+        margin-bottom: 1rem;
+        width: 400px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 35px;
+        background-color: rgb(251, 251, 251);
+    }
+    .ptags2{
+        text-align: center;
+        width: 800px;
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 35px;
+    }
   }

@@ -1,3 +1,4 @@
+// just for implement feature and use inside About.js files
 import React, { useState } from 'react';
 
 const Dropdown = () => {

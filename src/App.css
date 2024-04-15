@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -6,15 +7,72 @@
 .nabvar_btn{
   margin-top: 1rem;
   margin-left: 80rem;
-  font-size: 13px;
-  font-weight: 600;
-  color: black;
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 15px;
+  /* font-size: 13px; */
+  /* font-weight: 600; */
+  /* color: black; */
+  /* padding: 0.3rem; */
+  /* border: none; */
+  /* border-radius: 15px; */
   background-color: rgb(231, 229, 229);
 }
 .nabvar_btn:hover{
   transform: scale(1.01);
   background-color: rgb(221, 217, 217);
+}
+.download_btn{
+  position: absolute;
+  right: 40px;
+  margin-top: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .nabvar_btn{
+    margin-left: 70rem;
+  }
+  .download_btn{
+    margin-right: -65rem;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nabvar_btn{
+    margin-left: 70rem;
+    margin-top: 1.5rem;
+  }
+  .download_btn{
+    margin-right: -41rem;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .nabvar_btn{
+    margin-left: 84rem;
+    margin-top: 1.5rem;
+  }
+  .download_btn{
+    margin-right: -39rem;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
 }

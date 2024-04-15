@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer,useEffect} from 'react';
 import './Home.css'
 
 function reducer(state, action) {
@@ -21,11 +21,25 @@ function reducer(state, action) {
     case 'clear':
       return { text: '', wordCount: 0, charCount: 0, readingTime: 0 };
 
+    // case 'copy':
+    //   // Copy text to clipboard
+    //   if (navigator.clipboard && navigator.clipboard.writeText) {
+    //     navigator.clipboard.writeText(state.text);
+    //   }
+    //   return state;
     case 'copy':
-      // Copy text to clipboard
+    // Copy text to clipboard using navigator.clipboard if available, or fallback to document.execCommand()
+    if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(state.text);
-      return state;
-
+    } else {
+      const textarea = document.createElement('textarea');
+      textarea.value = state.text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+    return state;
     case 'removeExtraSpaces':
       const words = state.text.split(' ').filter(Boolean);
       const newTextWithoutExtraSpaces = words.join(' ');
@@ -51,7 +65,7 @@ const calculateReadingTime = (text) => {
   };
   
 
-const Home = () => {
+const Home = ({ setTextForDownload }) => {
   const initialvalue = {
     text: '',
     wordCount: 0,
@@ -61,12 +75,16 @@ const Home = () => {
 
   const [state, dispatch] = useReducer(reducer, initialvalue);
 
+  useEffect(() => {
+    setTextForDownload(state.text);
+  }, [state.text, setTextForDownload]);
+
   return (
     <div className='home_main_part'>
       <h1>TextUtils - Word Counter, Character Counter, Remove Extra Space</h1>
       <h2>Enter Your Text Here:</h2>
-      <textarea
-        style={{padding : "5px", fontSize : "16px"}}
+      <textarea className='textarea1'
+        style={{padding : "5px"}}
         id="textareavalue"
         value={state.text}
         onChange={(e) => {
@@ -96,12 +114,12 @@ const Home = () => {
 
       <h2 id='summary'>Summary Of Your Text</h2>
 
-      <h3>Number of Words: {state.wordCount}</h3>
-      <h3>Number of Characters: {state.charCount}</h3>
-      <h3>Reading Time: {state.readingTime} Second</h3>
+      <h3 className='count_text'>Number of Words: {state.wordCount}</h3>
+      <h3 className='count_text'>Number of Characters: {state.charCount}</h3>
+      <h3 className='count_text'>Reading Time: {state.readingTime} Second</h3>
         <br></br>
       <h2 id='preview_text'>Preview Document</h2>
-      <textarea style={{padding : "5px", fontSize : "16px"}} value={state.text} rows={'7'} cols={'40'}></textarea>
+      <textarea style={{padding : "5px"}} value={state.text} rows={'7'} cols={'40'}></textarea>
     </div>
   );
 };

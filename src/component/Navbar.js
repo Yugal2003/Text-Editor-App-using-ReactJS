@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='flex_div'>
-        <h2>TextUtils</h2>
+        <NavLink style={{textDecoration:"none"}} to="/"><h2>TextUtils</h2></NavLink>
         <ul className='ultag' style={{display:"flex"}}>
             <li><NavLink className="navlink" to="/">Home</NavLink></li>
             <li><NavLink className="navlink" to="/about">About</NavLink></li>

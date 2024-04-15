@@ -8,6 +8,7 @@
     margin-top: 0.5rem;
 }
 .home_main_part textarea{
+    font-size: 16px;
     width: 500px;
     margin-bottom: 0.42rem;
 }
@@ -45,4 +46,188 @@
   .dark-mode {
     background-color: #222;
     color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 360px) and (max-width: 768px) {
+    .light-mode {
+        background-color: #f0f0f0;
+        width: 1400px;
+        color: #000;
+      }
+      
+       .dark-mode{
+        background-color: #000000;
+        color: #fff;
+      }
+    .home_main_part{
+        overflow-y: hidden;
+        width: 1400px;
+    }
+    .home_main_part h1{
+        margin-top: 5rem;
+        font-size: 65px;
+        width: 800px;
+        text-align: center;
+    }
+    .home_main_part h2{
+        margin-top: 3rem;
+        font-size: 50px;
+    }
+    .home_main_part textarea{
+        border: 2px solid black;
+        margin-top: 3rem;
+        height: 20rem;
+        width: 1100px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .btn_color{
+        margin-top: 3rem;
+        border-radius: 10px;
+        padding:1rem;
+        border: none;
+        margin-left: 1rem;
+        background-color: rgb(245, 91, 35);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #summary{
+        margin-top: 5rem;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .count_text{
+        padding-block: 1rem;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .light-mode {
+        background-color: #f0f0f0;
+        width: 1600px;
+        color: #000;
+      }
+      
+       .dark-mode{
+        width: 1400px;
+        background-color: #000000;
+        color: #fff;
+      }
+    .home_main_part{
+        overflow-y: hidden;
+        width: 1400px;
+    }
+    .home_main_part h1{
+        margin-top: 2rem;
+        font-size: 50px;
+        width: 800px;
+        text-align: center;
+    }
+    .home_main_part h2{
+        margin-top: 1rem;
+        font-size: 40px;
+    }
+    .home_main_part textarea{
+        border: 2px solid black;
+        margin-top: 1rem;
+        height: 15rem;
+        width: 800px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .btn_color{
+        margin-top: 1rem;
+        border-radius: 10px;
+        padding:1rem;
+        border: none;
+        margin-left: 1rem;
+        background-color: rgb(245, 91, 35);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #summary{
+        margin-top: 2rem;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .count_text{
+        padding-block: 1rem;
+        font-size: 30px;
+        font-weight: bold;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .light-mode {
+        background-color: #f0f0f0;
+        width: 1620px;
+        color: #000;
+      }
+      
+       .dark-mode{
+        background-color: #000000;
+        color: #fff;
+        width: 1620px;
+      }
+    .home_main_part{
+        overflow-y: hidden;
+        width: 1400px;
+    }
+    .home_main_part h1{
+        margin-top: 2rem;
+        font-size: 55px;
+        width: 800px;
+        text-align: center;
+    }
+    .home_main_part h2{
+        margin-top: 1rem;
+        font-size: 40px;
+    }
+    .home_main_part textarea{
+        border: 2px solid black;
+        margin-top: 1rem;
+        height: 18rem;
+        width: 1000px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .btn_color{
+        margin-top: 1rem;
+        border-radius: 10px;
+        padding:1rem;
+        border: none;
+        margin-left: 1rem;
+        background-color: rgb(245, 91, 35);
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #summary{
+        margin-top: 2rem;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .count_text{
+        padding-block: 1rem;
+        font-size: 35px;
+        font-weight: bold;
+    }
   }
