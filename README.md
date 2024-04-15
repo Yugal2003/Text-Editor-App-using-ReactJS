@@ -1,3 +1,27 @@
+<h1>Text-Editor-App Overview :</h1>
+
+<ul>
+  <li><h2>Home Page</h2></li>
+  <img src="https://github.com/Yugal2003/Text-Editor-App-using-ReactJS/assets/132428388/4ae2a677-9169-4ff2-bbb4-16f620424926" /><br>
+</ul>
+
+<ul>
+  <li><h2>About Page</h2></li>
+  <img src="https://github.com/Yugal2003/Text-Editor-App-using-ReactJS/assets/132428388/d23948ac-6e89-404a-a796-c6346d7bb980" /><br>
+</ul>
+
+<ul>
+  <li><h2>Contact Page</h2></li>
+  <img src="https://github.com/Yugal2003/Text-Editor-App-using-ReactJS/assets/132428388/e05934d0-f8c5-485d-9fee-8b0807835b6c" /><br>
+</ul>
+
+<ul>
+  <li><h2>Dark Mode & Download Functionality</h2></li>
+  <img src="https://github.com/Yugal2003/Text-Editor-App-using-ReactJS/assets/132428388/c3e1f383-72f7-439d-a48a-63f599c9100c" />
+  <img src="https://github.com/Yugal2003/Text-Editor-App-using-ReactJS/assets/132428388/fdd42cdb-35ec-4c4d-991c-d58210987e5c" />
+</ul>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
